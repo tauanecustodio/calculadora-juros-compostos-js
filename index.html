@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assetss/css/style.css">
+    <title>Juros Compostos</title>
+</head>
+<body>
+    <main class="container">
+        <form action="" class="calculate-form">
+            <h1>Calculadora de rendimendo com juros compostos</h1>
+
+            <div class="input-group">
+                <label for="capital">Valor inicial (capital)</label>
+                <input type="text" inputmode="numeric" id="capital" name="capital">
+            </div>
+            <div class="input-group">
+                <label for="juros">Taxa de Juros a.m.</label>
+                <input type="text" inputmode="numeric" id="juros" name="juros">
+            </div>
+            <div class="input-group">
+                <label for="valor">Tempo de rendimento</label>
+                <input type="text" inputmode="numeric" id="tempo" name="tempo">
+            </div>
+            <div class="resultado">
+                <p>Resultado</p>
+                <p>R$ <span id="texto-resultado">0.00</span></p>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Calcular" id="calcular">
+                <input type="reset" value="limpar" id="limpar">
+            </div>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
