@@ -1,6 +1,6 @@
 const buttonCalcular = document.getElementById('calcular');
 const buttonLimpar = document.getElementById('limpar');
-const textoResultado = document.getElementById('texto-resultado');
+const textResult = document.getElementById('text-result');
 
 
 buttonCalcular.addEventListener('click', function (event) {
@@ -16,12 +16,12 @@ buttonCalcular.addEventListener('click', function (event) {
     console.log(tempo);
     console.log(montante);
 
-    textoResultado.innerText = montante.toFixed(2);
+    textResult.innerText = montante.toFixed(2);
 });
 
 buttonLimpar.addEventListener('click', function () {
     document.getElementById('capital').value = '';
     document.getElementById('juros').value = '';
     document.getElementById('tempo').value = '';
-    textoResultado.innerText = "0.00";
+    textResult.innerText = "0.00";
 });
