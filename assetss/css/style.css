@@ -3,6 +3,9 @@
     --text-color: #d1d5db;
     --text-color-2: #c8ced6;
     --background-color: #262626;
+
+    --primary-color: #6d28d9;
+    --secondary-color: #4c1d95;
 }
 
 * {
@@ -23,6 +26,7 @@
 }
 
 .calculator {
+    min-width: 340px;
     padding: 40px;
     margin: 1em;
     background-color: var(--background-color);
@@ -73,7 +77,7 @@
     padding: 5px;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #4c1d95;
+    border-bottom: 1px solid var(--secondary-color);
     color: var(--text-color);
     outline: none;
 }
@@ -92,7 +96,7 @@
 }
 
 .buttons input {
-    background: #6d28d9;
+    background: var(--primary-color);
     color: var(--text-color);
     font-size: 18px;
     font-weight: 600;
@@ -104,8 +108,8 @@
 }
 
 .buttons input:hover {
-    background: #4c1d95;
-    scale: 1.05;
+    background: var(--primary-color);
+    scale: 1.01;
 }
  
 @media (max-width: 900px) {
